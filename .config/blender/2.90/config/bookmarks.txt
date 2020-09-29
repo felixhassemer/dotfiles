@@ -1,0 +1,7 @@
+[Bookmarks]
+/run/media/felix/Work & Media/Work/Eigene Arbeiten/
+/run/media/felix/Work & Media/Work/Eigene Arbeiten/Blender_Projects/
+[Recent]
+/run/media/felix/Work & Media/Work/Eigene Arbeiten/Blender_Projects/2020/
+/home/felix/Desktop/
+/run/media/felix/Work & Media/Work/Eigene Arbeiten/Blender_Projects/2020/Paper_Palace/
