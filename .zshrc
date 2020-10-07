@@ -94,6 +94,11 @@ source $ZSH/oh-my-zsh.sh
 # Set default Editor
 export EDITOR=/usr/bin/vim
 
+# Set nnn environment variables
+export NNN_BMS='m:/run/media/felix;x:~/Dropbox/xobrain;d:~/Downloads;t:~/.local/share/Trash/files'
+export NNN_TRASH=1
+export NNN_PLUG='d:diffs'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
