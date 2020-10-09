@@ -117,6 +117,7 @@ alias shutdown="shutdown -h now"
 alias n="nnn -e -d"
 alias music="xdg-open https://music.youtube.com/"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias q="exit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
