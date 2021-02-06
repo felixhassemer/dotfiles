@@ -50,6 +50,9 @@ set hidden
 " set confirm
 " set autowriteall
 
+" Enable recursive filesearch (fuzzy-search)
+set path+=**
+
 " Better command-line completion
 set wildmenu
 

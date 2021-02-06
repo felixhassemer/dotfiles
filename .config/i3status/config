@@ -1,0 +1,51 @@
+general {
+        output_format = "i3bar"
+        colors = false
+        markup = pango
+        interval = 5
+        color_good = '#98971a'
+	color_degraded = '#d79921'
+	color_bad = '#cc241d'
+}
+
+
+order += "load"
+order += "memory"
+# order += "disk /"
+# order += "disk /home"
+# order += "ethernet enp1s0"
+# order += "wireless wlp4s0u1"
+order += "volume master"
+# order += "battery 1"
+order += "tztime local"
+
+load {
+        format = "<span color='#a89984'> CPU: %5min </span>"
+}
+
+memory {
+        format = "<span color='#a89984'> RAM: %used </span>"
+}
+
+ethernet enp1s0 {
+        format_up = "<span color='#a89984'>  %ip </span>"
+        format_down = "<span background='#88c0d0'>  Disconnected </span>"
+}
+
+wireless wlp4s0u1 {
+        format_up = "<span background='#689d6a'>  %essid </span>"
+        format_down = "<span background='#928374'>  Disconnected </span>"
+}
+
+volume master {
+        format = "<span color='#a89984'> Volume: %volume </span>"
+        format_muted = "<span background='#928374'> Muted </span>"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+tztime local {
+		format = "<span color='#8ec07c'> %time </span>"
+		format_time = " %a %-d %b %H:%M"
+}

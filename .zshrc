@@ -91,11 +91,13 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+
 # Set default Editor
 export EDITOR=/usr/bin/vim
+export PATH="$(yarn global bin):$PATH"
 
 # Set nnn environment variables
-export NNN_BMS='m:/run/media/felix;x:~/Dropbox/xobrain;d:~/Downloads;t:~/.local/share/Trash/files'
+export NNN_BMS='m:/run/media/felix;x:~/Dropbox/xobrain;d:/run/media/felix/Data/Downloads;t:~/.local/share/Trash/files'
 export NNN_TRASH=1
 export NNN_PLUG='d:diffs'
 
@@ -109,6 +111,7 @@ export NNN_PLUG='d:diffs'
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias i3config="vim ~/.config/i3/config"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias ls="ls --color=auto -a"
 alias reload=". ~/.zshrc"
@@ -116,7 +119,7 @@ alias wttr="curl wttr.in/hamburg"
 alias shutdown="shutdown -h now"
 alias n="nnn -e -d"
 alias music="xdg-open https://music.youtube.com/"
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotconfig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias q="exit"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
