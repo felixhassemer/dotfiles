@@ -23,6 +23,8 @@ filetype indent plugin on
 " set up Plug
 call plug#begin()
     Plug 'vimwiki/vimwiki'
+    Plug 'psliwka/vim-smoothie'
+    Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 
 " set up VimWiki
@@ -31,7 +33,6 @@ let g:vimwiki_list = [{'path': '~/Dropbox/xobrain',
 
 " Enable syntax highlighting
 syntax on
-
 
 "------------------------------------------------------------
 " Must have options {{{1
@@ -65,6 +66,12 @@ set path+=**
 " Better command-line completion
 set wildmenu
 set wildignore+=**/node_modules/**
+set completeopt=menuone,longest
+set shortmess+=c
+
+" Spell checking
+" set spell
+set complete+=kspell
 
 " Show partial commands in the last line of the screen
 set showcmd
@@ -169,5 +176,16 @@ map Y y$
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
+nmap <C-P> :FZF<CR>
+
+" Insert mode remaps
+inoremap <expr> <CR> pumvisible() ? "<C-y>" : "<CR>"
+" Select the complete menu item like CTRL+y would
+inoremap <expr> <Right> pumvisible() ? "<C-y>" : "<Right>"
+" navigate the complete menu line CTRL+n / CTRL+p would
+inoremap <expr> <Down> pumvisible() ? "<C-n>" : "<Down>"
+inoremap <expr> <Up> pumvisible() ? "<C-p>" : "<Up>"
+" cancel the complete menu like CTRL+e would
+inoremap <expr> <Left> pumvisible() ? "<C-e>" : "<Left>"
 
 "------------------------------------------------------------
