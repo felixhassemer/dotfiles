@@ -118,9 +118,10 @@ alias reload=". ~/.zshrc"
 alias wttr="curl wttr.in/hamburg"
 alias shutdown="shutdown -h now"
 alias n="nnn -e -d"
-alias music="xdg-open https://music.youtube.com/"
-alias dotconfig='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias q="exit"
+alias v="vim"
+alias ack="ack -i -C 3"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -20,6 +20,15 @@ set nocompatible
 " and for plugins that are filetype specific.
 filetype indent plugin on
 
+" set up Plug
+call plug#begin()
+    Plug 'vimwiki/vimwiki'
+call plug#end()
+
+" set up VimWiki
+let g:vimwiki_list = [{'path': '~/Dropbox/xobrain',
+            \ 'syntax': 'markdown', 'ext': '.md'}]
+
 " Enable syntax highlighting
 syntax on
 
@@ -55,6 +64,7 @@ set path+=**
 
 " Better command-line completion
 set wildmenu
+set wildignore+=**/node_modules/**
 
 " Show partial commands in the last line of the screen
 set showcmd
@@ -151,7 +161,7 @@ set expandtab
 "
 " Useful mappings
 
-let mapleader = ","
+let mapleader = "\\"
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
 map Y y$

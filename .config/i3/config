@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:MesloLGS NF 8
+font pango:MesloLGS NF Bold 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -33,6 +33,9 @@ exec --no-startup-id nm-applet
 # Wallpapers with Nitrogen
 exec --no-startup-id nitrogen --restore
 
+# Start compositor Picom
+exec --no-startup-id picom -b
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -47,12 +50,13 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+shift+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 bindsym $mod+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'MesloLGS NF 16'
+bindsym $mod+Tab exec rofi -lines 12 -padding 18 -width 60 -location 0 -show window -sidebar-mode -columns 1 -font 'MesloLGS NF 16'
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
@@ -180,6 +184,9 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+# window rules
+for_window [class="google-chrome" window_role="browser"] border none
+
 bindsym $mod+r mode "resize"
 
 # Theme colors
@@ -212,13 +219,13 @@ bar {
     colors {
         background $bg-color
         statusline $bg-color
-        separator $accent-color
+        separator $bg-color
 
         # colour of             border          background              text
-        focused_workspace       $accent-color   $accent-color           $text-color
-        active_workspace        $accent-color   $accent-color           $text-color
-        inactive_workspace      $bg-color       $bg-color               $inactive-text-color
-        urgent_workspace        $urgent-color   $urgent-color           $text-color
+        focused_workspace       $accent-color   $accent-color           $bg-color
+        active_workspace        $accent-color   $accent-color           $bg-color
+        inactive_workspace      $accent-color       $bg-color               $text-color
+        urgent_workspace        $urgent-color   $urgent-color           $bg-color
     }
     status_command i3status
 }
