@@ -19,12 +19,18 @@ set nocompatible
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
 filetype indent plugin on
+set omnifunc=syntaxcomplete#Complete
 
 " set up Plug
 call plug#begin()
     Plug 'vimwiki/vimwiki'
     Plug 'psliwka/vim-smoothie'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-scripts/AutoComplPop'
+    Plug 'ap/vim-css-color'
+    Plug 'tpope/vim-surround'
+    Plug 'prettier/vim-prettier'
 call plug#end()
 
 " set up VimWiki
@@ -35,7 +41,7 @@ let g:vimwiki_list = [{'path': '~/Dropbox/xobrain',
 syntax on
 
 "------------------------------------------------------------
-" Must have options {{{1
+" Must have options
 "
 " These are highly recommended options.
 
@@ -189,3 +195,7 @@ inoremap <expr> <Up> pumvisible() ? "<C-p>" : "<Up>"
 inoremap <expr> <Left> pumvisible() ? "<C-e>" : "<Left>"
 
 "------------------------------------------------------------
+" Plugin Settings
+"
+let g:airline#extensions#tablin#formatter = 'default'
+let g:airline_theme='bubblegum'

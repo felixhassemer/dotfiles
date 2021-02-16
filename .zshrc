@@ -94,10 +94,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Set default Editor
 export EDITOR=/usr/bin/vim
-export PATH="$(yarn global bin):$PATH"
+export PATH="$PATH:`yarn global bin`"
 
 # Set nnn environment variables
-export NNN_BMS='m:/run/media/felix;x:~/Dropbox/xobrain;d:/run/media/felix/Data/Downloads;t:~/.local/share/Trash/files'
+export NNN_BMS='m:/run/media/felix;x:~/Dropbox/xobrain;d:/run/media/felix/Data/Downloads;t:~/.local/share/Trash/files;w:/run/media/felix/Data/work'
 export NNN_TRASH=1
 export NNN_PLUG='d:diffs'
 
@@ -122,6 +122,7 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias q="exit"
 alias v="vim"
 alias ack="ack -i -C 3"
+alias f="fzf"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
