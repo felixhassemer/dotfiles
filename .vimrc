@@ -31,6 +31,7 @@ call plug#begin()
     Plug 'ap/vim-css-color'
     Plug 'tpope/vim-surround'
     Plug 'prettier/vim-prettier'
+    Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " set up VimWiki
