@@ -200,3 +200,7 @@ inoremap <expr> <Left> pumvisible() ? "<C-e>" : "<Left>"
 "
 let g:airline#extensions#tablin#formatter = 'default'
 let g:airline_theme='bubblegum'
+
+
+" Vimwiki Diary
+au BufNewFile ~/Dropbox/xobrain/diary/*.md :silent 0r !~/.vim/bin/generate-vimwiki-diary-template '%'
