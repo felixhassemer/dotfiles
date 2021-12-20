@@ -47,6 +47,9 @@ esac
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Set KDE as current desktop so dolphin looks better
+# export XDG_CURRENT_DESKTOP=KDE
+
 use_color=true
 
 # Set colorful PS1 only on colorful terminals.

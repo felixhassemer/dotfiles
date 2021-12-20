@@ -11,6 +11,8 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 
 DEFAULT_SESSION=startkde
 
+# export QT_QPA_PLATFORMTHEME="qt5ct"
+
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
@@ -65,3 +67,4 @@ get_session(){
 }
 
 exec $(get_session)
+xset r rate 600 25
