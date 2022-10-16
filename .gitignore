@@ -1,0 +1,13 @@
+# Linux folder attributes (Dolphi) and PyCharm metadata
+.idea/
+.directory/
+
+# macOS folder attributes
+.DS_Store
+
+# Vim swap file
+.swp
+
+# Custom folders and software configuration files
+.config/nnn/plugins/
+.config/BraveSoftware/
