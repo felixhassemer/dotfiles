@@ -4,8 +4,8 @@ general {
         markup = pango
         interval = 2
         color_good = '#98971a'
-	color_degraded = '#d79921'
-	color_bad = '#cc241d'
+        color_degraded = '#d79921'
+        color_bad = '#cc241d'
 }
 
 
@@ -15,10 +15,10 @@ order += "memory"
 # order += "disk /"
 # order += "disk /home"
 # order += "ethernet enp1s0"
-order += "wireless wlp4s0u1"
+# order += "wireless wlp4s0u1"
 order += "volume master"
-# order += "battery 1"
 order += "tztime local"
+# order += "battery 1"
 
 load {
         format = "<span color='#282828' background='#d3869b'> ﬙ CPU: %5min </span>"
@@ -52,5 +52,5 @@ volume master {
 
 tztime local {
 		format = "<span color='#282828' background='#8ec07c'> %time </span>"
-		format_time = "%a %-d %b %H:%M"
+    format_time = "%a %-d %b %H:%M"
 }
