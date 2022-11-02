@@ -233,20 +233,23 @@ client.background           $bg-color
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    position bottom
-    mode dock
+# bar {
+#     position bottom
+#     mode dock
+# 
+#     colors {
+#         background $bg-color
+#         statusline $bg-color
+#         separator $bg-color
+# 
+#         # colour of             border          background              text
+#         focused_workspace       $accent-color   $accent-color           $bg-color
+#         active_workspace        $accent-color   $accent-color           $bg-color
+#         inactive_workspace      $accent-color       $bg-color               $text-color
+#         urgent_workspace        $urgent-color   $urgent-color           $bg-color
+#     }
+#     status_command i3status
+# }
 
-    colors {
-        background $bg-color
-        statusline $bg-color
-        separator $bg-color
-
-        # colour of             border          background              text
-        focused_workspace       $accent-color   $accent-color           $bg-color
-        active_workspace        $accent-color   $accent-color           $bg-color
-        inactive_workspace      $accent-color       $bg-color               $text-color
-        urgent_workspace        $urgent-color   $urgent-color           $bg-color
-    }
-    status_command i3status
-}
+# Start Polybar if installed
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
