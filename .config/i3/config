@@ -44,6 +44,9 @@ exec --no-startup-id picom -b
 # Start redshift for color temperature adjustment
 exec --no-startup-id redshift
 
+# Start System tray volume icon
+exec --no-startup-id pasystray
+
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
