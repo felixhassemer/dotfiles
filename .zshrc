@@ -86,6 +86,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Set eu keyboard layout
+setxkbmap eu
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -104,9 +107,10 @@ export EDITOR=/usr/bin/vim
 export PATH="$PATH:`yarn global bin`"
 
 # Set nnn environment variables
-export NNN_BMS='m:/run/media/felix;x:~/Dropbox/xobrain;d:/run/media/felix/Data/Downloads;t:~/.local/share/Trash/files;w:/run/media/felix/Data/work'
+export NNN_BMS='w:/Windows;m:/Data/Media;x:~/Dropbox/xobrain;d:/Data/Downloads;t:~/.local/share/Trash/files;w:/Data/Work'
 export NNN_TRASH=1
-export NNN_PLUG='d:diffs'
+export NNN_PLUG='d:diffs;f:finder;o:fzoeen;d:diffs;t:nmount;v:imgview;g:preview-tui'
+export NNN_FIFO=/tmp/nnn.fifo
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
