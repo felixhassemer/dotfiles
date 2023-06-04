@@ -8,6 +8,6 @@ polybar-msg cmd quit
 
 # Launch bar1 and bar2
 echo "---" | tee -a /tmp/standardbar1.log
-polybar standard 2>&1 | tee -a /tmp/standardbar1.log & disown
+polybar -r standard 2>&1 | tee -a /tmp/standardbar1.log & disown
 
 echo "Bars launched..."
