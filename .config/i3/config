@@ -68,7 +68,7 @@ bindsym XF86AudioPrev exec playerctl previous
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill
@@ -258,4 +258,3 @@ client.background           $bg-color
 
 # Start Polybar if installed
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-# exec_always --no-startup-id polybar -r standard
