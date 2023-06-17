@@ -183,7 +183,16 @@ map Y y$
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
+" open Fuzzy file search
 nmap <C-P> :FZF<CR>
+" center cursor after movements
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" set alias for saving with sudo tee
+command! -nargs=0 Sw w !sudo tee % > /dev/null
 
 " Insert mode remaps
 inoremap <expr> <CR> pumvisible() ? "<C-y>" : "<CR>"
