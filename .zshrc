@@ -70,6 +70,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# PLUGINS ----------------------------------------------------
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -107,7 +108,7 @@ export EDITOR=/usr/bin/vim
 export PATH="$PATH:`yarn global bin`"
 
 # Set nnn environment variables
-export NNN_BMS='w:/Windows;m:/Data/Media;x:~/Dropbox/xobrain;d:/Data/Downloads;t:~/.local/share/Trash/files;w:/Data/Work'
+export NNN_BMS='w:/Data/Work;m:/Data/Media;x:~/Dropbox/xobrain;d:/Data/Downloads;t:~/.local/share/Trash/files;a:/Data/Work/Projects/Personal/Audio'
 export NNN_TRASH=1
 export NNN_PLUG='d:diffs;f:finder;o:fzoeen;d:diffs;t:nmount;v:imgview;g:preview-tui'
 export NNN_FIFO=/tmp/nnn.fifo
@@ -120,21 +121,22 @@ export NNN_FIFO=/tmp/nnn.fifo
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# ALIASES -------------------------------------------
+alias shutdown="shutdown -h now"
+alias ls="ls --color=auto -a"
+alias n="nnn -e -d"
+alias q="exit"
+alias v="vim"
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ack="ack -i -C 3"
+alias f="fzf"
 alias zshconfig="vim ~/.zshrc"
 alias i3config="vim ~/.config/i3/config"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias ls="ls --color=auto -a"
 alias reload=". ~/.zshrc"
 alias wttr="curl wttr.in/hamburg"
-alias shutdown="shutdown -h now"
-alias n="nnn -e -d"
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias q="exit"
-alias v="vim"
-alias ack="ack -i -C 3"
-alias f="fzf"
-alias bdsm="asciiquarium"
+alias startdiffusion="~/Repositories/stable-diffusion-webui/webui.sh"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
