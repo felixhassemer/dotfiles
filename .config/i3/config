@@ -39,7 +39,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
 
 # Start compositor Picom
-exec --no-startup-id picom -b
+exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf &
 
 # Start redshift for color temperature adjustment
 exec --no-startup-id redshift
@@ -220,11 +220,13 @@ set $inactive-text-color    #a89984
 set $urgent-color       #cc241d
 
 # window borders
-# default_border pixel 1
-# hide_edge_borders smart
+# default_border pixel 6
+hide_edge_borders smart_no_gaps
+border_radius 0
 
 # Gaps
 gaps inner 20
+# gaps outer 20
 smart_gaps on
 
 # set window colors
