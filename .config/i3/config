@@ -235,7 +235,7 @@ border_radius 0
 # Gaps
 gaps inner 20
 # gaps outer 20
-smart_gaps off
+smart_gaps on
 
 # set window colors
 # class                     border              background              text                    indicator
@@ -263,7 +263,6 @@ client.background           $bg-color
 #         inactive_workspace      $accent-color       $bg-color               $text-color
 #         urgent_workspace        $urgent-color   $urgent-color           $bg-color
 #     }
-#     status_command i3status
 # }
 
 # Start Polybar if installed
