@@ -35,6 +35,9 @@ exec --no-startup-id nm-applet
 
 # exec --no-startup-id blueman-manager
 
+# start fcitx input method switcher 
+exec --no-startup-id fcitx -d &
+
 # Wallpapers with Nitrogen
 exec --no-startup-id nitrogen --restore
 

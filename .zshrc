@@ -113,6 +113,15 @@ export NNN_TRASH=1
 export NNN_PLUG='d:diffs;f:finder;o:fzoeen;d:diffs;t:nmount;v:imgview;g:preview-tui'
 export NNN_FIFO=/tmp/nnn.fifo
 
+# Set fcitx environment variables 
+export GTK_IM_MODULE='fcitx'
+export QT_IM_MODULE='fcitx'
+export SDL_IM_MODULE='fcitx'
+export XMODIFIERS='@im=fcitx'
+
+# Set qt application styling env variables
+# export QT_QPA_PLATFORMTHEME='qt5ct'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
