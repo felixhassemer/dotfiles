@@ -104,7 +104,9 @@ setxkbmap eu
 
 
 # Set default Editor
-export EDITOR=/usr/bin/vim
+# export EDITOR=/usr/bin/vim
+export EDITOR=nvim
+export VISUAL=nvim
 export PATH="$PATH:`yarn global bin`"
 
 # Set nnn environment variables
@@ -136,12 +138,13 @@ alias ls="ls --color=auto -a"
 alias n="nnn -e -d"
 alias q="exit"
 alias v="vim"
+alias nv="nvim"
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ack="ack -i -C 3"
 alias f="fzf"
-alias zshconfig="vim ~/.zshrc"
-alias i3config="vim ~/.config/i3/config"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.zshrc"
+alias i3config="nvim ~/.config/i3/config"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias reload=". ~/.zshrc"
 alias wttr="curl wttr.in/hamburg"
 alias startdiffusion="~/Repositories/stable-diffusion-webui/webui.sh"
