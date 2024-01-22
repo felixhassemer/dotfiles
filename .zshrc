@@ -135,6 +135,7 @@ export XMODIFIERS='@im=fcitx'
 # ALIASES -------------------------------------------
 alias shutdown="shutdown -h now"
 alias ls="ls --color=auto -a"
+alias cl="clear"
 alias n="nnn -e -d"
 alias q="exit"
 alias v="vim"
