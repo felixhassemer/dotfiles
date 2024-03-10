@@ -120,6 +120,7 @@ export GTK_IM_MODULE='fcitx'
 export QT_IM_MODULE='fcitx'
 export SDL_IM_MODULE='fcitx'
 export XMODIFIERS='@im=fcitx'
+export GLFW_IM_MODULE='ibus'
 
 # Set qt application styling env variables
 # export QT_QPA_PLATFORMTHEME='qt5ct'
@@ -140,6 +141,7 @@ alias n="nnn -e -d"
 alias q="exit"
 alias v="vim"
 alias nv="nvim"
+alias tmux="tmux -2"
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ack="ack -i -C 3"
 alias f="fzf"
