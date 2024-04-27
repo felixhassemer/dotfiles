@@ -55,8 +55,8 @@ exec --no-startup-id redshift
 # Start System tray volume icon
 exec --no-startup-id pasystray
 
-# Start Dropbox
-exec --no-startup-id dropbox
+# Start Nextcloud
+# exec --no-startup-id nextcloud
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
