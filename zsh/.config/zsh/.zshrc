@@ -101,7 +101,11 @@ plugins=(git
 # export EDITOR=/usr/bin/vim
 export EDITOR=nvim
 export VISUAL=nvim
-export PATH="$PATH:`yarn global bin`"
+# export PATH="$PATH:`yarn global bin`"
+
+# Set MacOS Homebrew dir
+export PATH="/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Set nnn environment variables
 export NNN_BMS='w:/Data/Work;m:/Data/Media;x:/Data/NextCloud/xobrain;d:/Data/Downloads;t:~/.local/share/Trash/files;a:/Data/Work/Projects/Personal/Audio'
@@ -145,4 +149,4 @@ alias reload=". ~/.config/zsh/.zshrc"
 alias wttr="curl wttr.in/hamburg"
 
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
