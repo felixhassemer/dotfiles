@@ -46,7 +46,7 @@
         "group/hardware",
         "group/settings",
         "custom/cliphist",
-        "idle_inhibitor",
+        //"idle_inhibitor",
         "tray",
         "custom/exit",
         "custom/ml4w-welcome",
