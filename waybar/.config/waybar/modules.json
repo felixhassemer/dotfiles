@@ -115,7 +115,7 @@
   // Settings
   "custom/settings": {
     "format": "",
-    "on-click": "~/.config/apps/ML4W_.config_Settings-x86_64.AppImage",
+    "on-click": "~/.config/apps/ML4W_Dotfiles_Settings-x86_64.AppImage",
     "tooltip": false
   },
 

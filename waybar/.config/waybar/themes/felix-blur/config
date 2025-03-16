@@ -14,12 +14,12 @@
     "margin-top": 0,
     "margin-bottom": 0,
     "layer": "top",
-    "margin-left": 16px,
-    "margin-right": 16px,    
+    "margin-left": 0,
+    "margin-right": 0,    
     "spacing": 0,
 
     // Load Modules
-    "include": ["~/dotfiles/waybar/modules.json"],
+    "include": ["~/.config/waybar/modules.json"],
 
     // Modules Left
     "modules-left": [
