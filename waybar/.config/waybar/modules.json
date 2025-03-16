@@ -21,7 +21,7 @@
       "default": ""
     },
     "persistent-workspaces": {
-            "*": 9
+      "*": 9
     }
   },
 
@@ -56,7 +56,7 @@
 
   // ML4W Welcome App
   "custom/ml4w-welcome": {
-    "on-click": "~/dotfiles/apps/ML4W_Welcome-x86_64.AppImage",
+    "on-click": "~/.config/apps/ML4W_Welcome-x86_64.AppImage",
     "format": " ",
     "tooltip": false
   },
@@ -78,9 +78,9 @@
   // Cliphist
   "custom/cliphist": {
     "format": "",
-    "on-click": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh",
-    "on-click-right": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh d",
-    "on-click-middle": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh w",
+    "on-click": "sleep 0.1 && ~/.config/scripts/cliphist.sh",
+    "on-click-right": "sleep 0.1 && ~/.config/scripts/cliphist.sh d",
+    "on-click-middle": "sleep 0.1 && ~/.config/scripts/cliphist.sh w",
     "tooltip": false
   },
 
@@ -90,46 +90,46 @@
     "tooltip-format": "{}",
     "escape": true,
     "return-type": "json",
-    "exec": "~/dotfiles/scripts/updates.sh",
+    "exec": "~/.config/scripts/updates.sh",
     "restart-interval": 60,
-    "on-click": "alacritty --class dotfiles-floating -e ~/dotfiles/scripts/installupdates.sh",
-    "on-click-right": "~/dotfiles/.settings/software.sh",
+    "on-click": "alacritty --class .config-floating -e ~/.config/scripts/installupdates.sh",
+    "on-click-right": "~/.config/.settings/software.sh",
     "tooltip": false
   },
 
   // Wallpaper
   "custom/wallpaper": {
     "format": "",
-    "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select",
-    "on-click-right": "~/dotfiles/hypr/scripts/wallpaper.sh",
+    "on-click": "~/.config/hypr/scripts/wallpaper.sh select",
+    "on-click-right": "~/.config/hypr/scripts/wallpaper.sh",
     "tooltip": false
   },
 
   // Waybar Themes
   "custom/waybarthemes": {
     "format": "",
-    "on-click": "~/dotfiles/waybar/themeswitcher.sh",
+    "on-click": "~/.config/waybar/themeswitcher.sh",
     "tooltip": false
   },
 
   // Settings
   "custom/settings": {
     "format": "",
-    "on-click": "~/dotfiles/apps/ML4W_Dotfiles_Settings-x86_64.AppImage",
+    "on-click": "~/.config/apps/ML4W_.config_Settings-x86_64.AppImage",
     "tooltip": false
   },
 
   // Keybindings
   "custom/keybindings": {
     "format": "",
-    "on-click": "~/dotfiles/hypr/scripts/keybindings.sh",
+    "on-click": "~/.config/hypr/scripts/keybindings.sh",
     "tooltip": false
   },
 
   // Filemanager Launcher
   "custom/filemanager": {
     "format": "",
-    "on-click": "~/dotfiles/.settings/filemanager.sh",
+    "on-click": "~/.config/.settings/filemanager.sh",
     "tooltip": false
   },
 
@@ -150,7 +150,7 @@
   // Browser Launcher
   "custom/browser": {
     "format": "",
-    "on-click": "~/dotfiles/.settings/browser.sh",
+    "on-click": "~/.config/.settings/browser.sh",
     "tooltip": false
   },
 
@@ -171,7 +171,7 @@
   // Windows VM
   "custom/windowsvm": {
     "format": "",
-    "on-click": "~/dotfiles/scripts/launchvm.sh",
+    "on-click": "~/.config/scripts/launchvm.sh",
     "tooltip": false
   },
 
@@ -181,7 +181,7 @@
     "format": "Apps",
     // END APPS LABEL
     "on-click": "sleep 0.2;rofi -show drun -replace",
-    "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
+    "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
     "tooltip": false
   },
 
@@ -189,7 +189,7 @@
   "custom/appmenuicon": {
     "format": "",
     "on-click": "rofi -show drun -replace",
-    "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
+    "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
     "tooltip": false
   },
 
@@ -298,7 +298,7 @@
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    "on-click": "~/dotfiles/.settings/networkmanager.sh"
+    "on-click": "~/.config/.settings/networkmanager.sh"
   },
 
   // Battery
