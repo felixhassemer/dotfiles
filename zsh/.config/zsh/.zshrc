@@ -108,7 +108,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
 # Set nnn environment variables
-export NNN_BMS='w:/Data/Work;m:/Data/Media;x:/Data/NextCloud/xobrain;d:/Data/Downloads;t:~/.local/share/Trash/files;a:/Data/Work/Projects/Personal/Audio'
+export NNN_BMS='x:/Users/felixhassemer/Nextcloud/xobrain;d:/Users/felixhassemer/Downloads;t:~/.local/share/Trash/files'
 export NNN_TRASH=1
 export NNN_PLUG='d:diffs;f:finder;o:fzoeen;d:diffs;t:nmount;v:imgview;g:preview-tui'
 export NNN_FIFO=/tmp/nnn.fifo
