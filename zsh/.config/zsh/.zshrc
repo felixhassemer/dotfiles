@@ -149,4 +149,4 @@ alias reload=". ~/.config/zsh/.zshrc"
 alias wttr="curl wttr.in/hamburg"
 
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
