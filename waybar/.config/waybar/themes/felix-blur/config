@@ -24,11 +24,11 @@
     // Modules Left
     "modules-left": [
         "custom/appmenu",
-        "group/settings",
+        // "group/settings",
         "wlr/taskbar",
-        "group/quicklinks",
-        "hyprland/window",
-        "custom/empty"
+        // "group/quicklinks",
+        "hyprland/window"
+        // "custom/empty"
     ],
 
     // Modules Center
@@ -45,10 +45,8 @@
         // "network",
         "group/hardware",
         "custom/cliphist",
-        "idle_inhibitor",
         "tray",
         "custom/exit",
-        "custom/ml4w-welcome",
         "clock"
     ]
 }
