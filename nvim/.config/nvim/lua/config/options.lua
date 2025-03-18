@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 opts = {
+  vim.cmd("set nospell"),
   mappings = {
     add = "gsa", -- Add surrounding in Normal and Visual modes
     delete = "gsd", -- Delete surrounding
