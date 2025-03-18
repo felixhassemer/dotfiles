@@ -227,8 +227,8 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-appmenu {
-  /* background-color: @backgrounddark; */
-  background-color: transparent;
+  background-color: @backgrounddark;
+  /* background-color: transparent; */
   font-size: 16px;
   color: @textcolor3;
   border-radius: 15px;
@@ -253,8 +253,8 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-updates {
-  /* background-color: @backgroundlight; */
-  background-color: transparent;
+  background-color: @backgroundlight;
+  /* background-color: transparent; */
   font-size: 16px;
   color: @textcolor3;
   border-radius: 15px;
@@ -330,8 +330,8 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-  /* background-color: @backgroundlight; */
-  background-color: transparent;
+  background-color: @backgroundlight;
+  /* background-color: transparent; */
   font-size: 16px;
   color: @textcolor3;
   border-radius: 15px;
@@ -341,8 +341,8 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-  /* background-color: @backgrounddark; */
-  background-color: transparent;
+  background-color: @backgrounddark;
+  /* background-color: transparent; */
   color: @textcolor1;
 }
 
@@ -377,8 +377,8 @@ window#waybar.empty #window {
 #bluetooth,
 #bluetooth.on,
 #bluetooth.connected {
-  /* background-color: @backgroundlight; */
-  background-color: transparent;
+  background-color: @backgroundlight;
+  /* background-color: transparent; */
   font-size: 16px;
   color: @textcolor3;
   border-radius: 15px;
