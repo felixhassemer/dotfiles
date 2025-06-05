@@ -175,7 +175,7 @@ alias q="exit"
 alias v="vim"
 alias nv="nvim"
 alias tmux="tmux -2"
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ack="ack -i -C 3"
 alias f="fzf"
 alias calc="qalc -i"
