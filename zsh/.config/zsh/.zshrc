@@ -69,17 +69,47 @@ SAVEHIST=10000
 setopt appendhistory
 
 # PLUGINS ----------------------------------------------------
+
+# Set the directory we want to store zinit and plugins
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
+# Download Zinit, if it's not there yet
+if [ ! -d "$ZINIT_HOME" ]; then
+   mkdir -p "$(dirname $ZINIT_HOME)"
+   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+# Source/Load zinit
+source "${ZINIT_HOME}/zinit.zsh"
+
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+# Add in snippets
+zinit snippet OMZL::git.zsh
+zinit snippet OMZP::git
+zinit snippet OMZP::sudo
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::command-not-found
+
+# Load completions
+autoload -Uz compinit && compinit
+
+zinit cdreplay -q
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git
-	colorize
-	colored-man-pages
-	extract
-	zsh-autosuggestions
-	zsh-syntax-highlighting)
+# plugins=(git
+# 	colorize
+# 	colored-man-pages
+# 	extract
+# 	zsh-autosuggestions
+# 	zsh-syntax-highlighting)
 
 
 # User configuration
@@ -115,6 +145,10 @@ export QT_IM_MODULE='fcitx'
 export SDL_IM_MODULE='fcitx'
 export XMODIFIERS='@im=fcitx'
 export GLFW_IM_MODULE='ibus'
+
+# Use bat as a colorizer for man (settings MANPAGER env variable)
+export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+# man 2 select
 
 # Set qt application styling env variables
 # export QT_QPA_PLATFORMTHEME='qt5ct'
