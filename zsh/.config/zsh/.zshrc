@@ -171,7 +171,6 @@ alias shutdown="shutdown -h now"
 alias ls="ls --color=auto -a"
 alias cl="clear"
 alias n="nnn -e -d"
-alias y="yazi"
 alias q="exit"
 alias v="vim"
 alias nv="nvim"
@@ -185,6 +184,15 @@ alias reload=". ~/.config/zsh/.zshrc"
 alias wttr="curl wttr.in/hamburg"
 alias defaultapps="nvim ~/.local/share/applications/mimeapps.list"
 alias applications="nnn -e -d /usr/share/applications/"
+
+# FUNCTIONS ---------------------------------------- 
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 # Keep at bottom of config
 eval "$(starship init zsh)"
