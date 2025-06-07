@@ -34,6 +34,12 @@ on   = "F"
 run  = "plugin smart-filter"
 desc = "Smart filter"
 
+# Plugin vcs-files (show git file changes in yazi)
+# [[mgr.prepend_keymap]]
+# on   = [ "g", "c" ]
+# run  = "plugin vcs-files"
+# desc = "Show Git file changes"
+
 keymap = [
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selection, or cancel search" },
 	{ on = "<C-[>", run = "escape",             desc = "Exit visual mode, clear selection, or cancel search" },
