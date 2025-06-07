@@ -11,16 +11,16 @@ run  = 'shell "$SHELL" --block'
 desc = "Open $SHELL here"
 
 # Hide/Show preview
-# [[mgr.prepend_keymap]]
-# on   = "T"
-# run  = "plugin toggle-pane min-preview"
-# desc = "Show or hide the preview pane"
-
-# Maximize/Restore preview
 [[mgr.prepend_keymap]]
 on   = "T"
-run  = "plugin toggle-pane max-preview"
-desc = "Maximize or restore the preview pane"
+run  = "plugin toggle-pane min-preview"
+desc = "Show or hide the preview pane"
+
+# Maximize/Restore preview
+# [[mgr.prepend_keymap]]
+# on   = "T"
+# run  = "plugin toggle-pane max-preview"
+# desc = "Maximize or restore the preview pane"
 
 # Plugin Smart-enter
 [[mgr.prepend_keymap]]
