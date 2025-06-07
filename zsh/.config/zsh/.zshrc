@@ -171,6 +171,7 @@ alias shutdown="shutdown -h now"
 alias ls="ls --color=auto -a"
 alias cl="clear"
 alias n="nnn -e -d"
+alias y="yazi"
 alias q="exit"
 alias v="vim"
 alias nv="nvim"
@@ -182,6 +183,8 @@ alias calc="qalc -i"
 alias zshconfig="nvim ~/.config/zsh/.zshrc"
 alias reload=". ~/.config/zsh/.zshrc"
 alias wttr="curl wttr.in/hamburg"
+alias defaultapps="nvim ~/.local/share/applications/mimeapps.list"
+alias applications="nnn -e -d /usr/share/applications/"
 
-
+# Keep at bottom of config
 eval "$(starship init zsh)"
