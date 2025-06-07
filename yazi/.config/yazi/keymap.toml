@@ -161,8 +161,14 @@ keymap = [
 
 	# Goto
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
-	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Go ~/.config" },
+	{ on = [ "g", "c" ],       run = "cd ~/.config/",     desc = "Go ~/.config/" },
+	{ on = [ "g", "C" ],       run = "cd ~/dotfiles/",     desc = "cd ~/dotfiles/" },
 	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Go ~/Downloads" },
+	{ on = [ "g", "w" ],       run = "cd /Data/Work/",   desc = "Go /Data/Work/" },
+	{ on = [ "g", "m" ],       run = "cd /Data/Media/",   desc = "Go /Data/Media/" },
+	{ on = [ "g", "b" ],       run = "cd /Data/Backups/",   desc = "cd /Data/Backups/" },
+	{ on = [ "g", "x" ],       run = "cd ~/Dropbox/xobrain/",   desc = "cd ~/Dropbox/xobrain/" },
+	{ on = [ "g", "p" ],       run = "cd ~/Pictures/",   desc = "cd ~/Pictures/" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },
 	{ on = [ "g", "f" ],       run = "follow",           desc = "Follow hovered symlink" },
 
