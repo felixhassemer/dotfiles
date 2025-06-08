@@ -28,7 +28,8 @@
 
 window#waybar {
   background-color: rgba(0, 0, 0, 0.2);
-  border-bottom: 0px solid #ffffff;
+  /* border-bottom: 0px solid #ffffff; */
+  border-bottom: none;
   /* color: #FFFFFF; */
   transition-property: background-color;
   transition-duration: 0.5s;
