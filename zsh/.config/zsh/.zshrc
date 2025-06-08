@@ -191,6 +191,8 @@ alias gd="git diff"
 alias ga="git add"
 alias gc="git commit -m"
 alias gs="git status"
+alias gp="git push"
+alias gb="git checkout"
 
 # FUNCTIONS ---------------------------------------- 
 function y() {
