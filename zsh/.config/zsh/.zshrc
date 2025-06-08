@@ -171,6 +171,7 @@ alias shutdown="shutdown -h now"
 alias ls="ls --color=auto -a"
 alias cl="clear"
 alias n="nnn -e -d"
+alias y="yazi"
 alias q="exit"
 alias v="vim"
 alias nv="nvim"
@@ -184,6 +185,12 @@ alias reload=". ~/.config/zsh/.zshrc"
 alias wttr="curl wttr.in/hamburg"
 alias defaultapps="nvim ~/.local/share/applications/mimeapps.list"
 alias applications="nnn -e -d /usr/share/applications/"
+
+# Git Aliases 
+alias gd="git diff"
+alias ga="git add"
+alias gc="git commit -m"
+alias gs="git status"
 
 # FUNCTIONS ---------------------------------------- 
 function y() {
