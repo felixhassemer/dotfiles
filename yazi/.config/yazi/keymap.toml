@@ -3,42 +3,29 @@
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
 [mgr]
-# Drop to shell
-[[mgr.prepend_keymap]]
-on   = "!"
-for  = "unix"
-run  = 'shell "$SHELL" --block'
-desc = "Open $SHELL here"
+prepend_keymap = [
+  # Drop to shell
+  { on   = "!", for  = "unix", run  = 'shell "$SHELL" --block', desc = "Open $SHELL here" },
 
-# Hide/Show preview
-[[mgr.prepend_keymap]]
-on   = "T"
-run  = "plugin toggle-pane min-preview"
-desc = "Show or hide the preview pane"
+  # Maximize/Restore preview
+  { on   = "T", run  = "plugin toggle-pane min-preview", desc = "Show or hide the preview pane" },
+  # { on   = "T", run  = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" } 
+  # Plugin Smart-enter
+  { on   = "l", run  = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+  # Plugin Smart-Filter
+  { on   = "F", run  = "plugin smart-filter", desc = "Smart filter" },
+  # Plugin vcs-files (show git file changes in yazi)
+  { on   = [ "g", "c" ], run  = "plugin vcs-files", desc = "Show Git file changes" },
 
-# Maximize/Restore preview
-# [[mgr.prepend_keymap]]
-# on   = "T"
-# run  = "plugin toggle-pane max-preview"
-# desc = "Maximize or restore the preview pane"
+  # Custom bookmarks
+  { on = [ "g", "x" ],       run = "cd ~/Dropbox/xobrain/",   desc = "cd ~/Dropbox/xobrain/" },
+  { on = [ "g", "C" ],       run = "cd ~/dotfiles/",     desc = "cd ~/dotfiles/" },
+  { on = [ "g", "w" ],       run = "cd /Data/Work/",   desc = "Go /Data/Work/" },
+  { on = [ "g", "m" ],       run = "cd /Data/Media/",   desc = "Go /Data/Media/" },
+  { on = [ "g", "b" ],       run = "cd /Data/Backups/",   desc = "cd /Data/Backups/" },
+  { on = [ "g", "p" ],       run = "cd ~/Pictures/",   desc = "cd ~/Pictures/" }
+]
 
-# Plugin Smart-enter
-[[mgr.prepend_keymap]]
-on   = "l"
-run  = "plugin smart-enter"
-desc = "Enter the child directory, or open the file"
-
-# Plugin Smart-Filter
-[[mgr.prepend_keymap]]
-on   = "F"
-run  = "plugin smart-filter"
-desc = "Smart filter"
-
-# Plugin vcs-files (show git file changes in yazi)
-# [[mgr.prepend_keymap]]
-# on   = [ "g", "c" ]
-# run  = "plugin vcs-files"
-# desc = "Show Git file changes"
 
 keymap = [
 	{ on = "<Esc>", run = "escape",             desc = "Exit visual mode, clear selection, or cancel search" },
@@ -162,13 +149,7 @@ keymap = [
 	# Goto
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
 	{ on = [ "g", "c" ],       run = "cd ~/.config/",     desc = "Go ~/.config/" },
-	{ on = [ "g", "C" ],       run = "cd ~/dotfiles/",     desc = "cd ~/dotfiles/" },
 	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Go ~/Downloads" },
-	{ on = [ "g", "w" ],       run = "cd /Data/Work/",   desc = "Go /Data/Work/" },
-	{ on = [ "g", "m" ],       run = "cd /Data/Media/",   desc = "Go /Data/Media/" },
-	{ on = [ "g", "b" ],       run = "cd /Data/Backups/",   desc = "cd /Data/Backups/" },
-	{ on = [ "g", "x" ],       run = "cd ~/Dropbox/xobrain/",   desc = "cd ~/Dropbox/xobrain/" },
-	{ on = [ "g", "p" ],       run = "cd ~/Pictures/",   desc = "cd ~/Pictures/" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },
 	{ on = [ "g", "f" ],       run = "follow",           desc = "Follow hovered symlink" },
 
