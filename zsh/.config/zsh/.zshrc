@@ -144,6 +144,9 @@ export NNN_TRASH=1
 export NNN_PLUG='d:diffs;f:finder;o:fzoeen;d:diffs;t:nmount;v:imgview;g:preview-tui'
 export NNN_FIFO=/tmp/nnn.fifo
 
+# Default Screenshot directory
+export HYPRSHOT_DIR='/home/felix/Pictures/Screenshots/hyprshot/'
+
 # Set fcitx environment variables 
 export GTK_IM_MODULE='fcitx'
 export QT_IM_MODULE='fcitx'
@@ -179,6 +182,7 @@ alias tmux="tmux -2"
 # alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ack="ack -i -C 3"
 alias f="fzf"
+alias type="ttyper"
 alias calc="qalc -i"
 alias zshconfig="nvim ~/.config/zsh/.zshrc"
 alias reload=". ~/.config/zsh/.zshrc"
