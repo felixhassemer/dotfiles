@@ -9,6 +9,8 @@
 .swp
 
 # Custom folders and software configuration files
+tmux/.config/tmux/plugins/
+zsh/.config/zsh/.zsh_history
 .config/nnn/plugins/
 .config/BraveSoftware/
 .config/BitwigStudio/
