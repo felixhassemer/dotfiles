@@ -8,6 +8,10 @@
 # Vim swap file
 .swp
 
+# temp files 
+zsh/.config/.zsh_history
+nvim/.config/nvim/lazy-lock.json
+
 # Custom folders and software configuration files
 .config/nnn/plugins/
 .config/BraveSoftware/
