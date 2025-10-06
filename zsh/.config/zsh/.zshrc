@@ -3,7 +3,7 @@
 
 setopt auto_cd
 # set vim keybindings 
-# bindkey -v
+bindkey -v
 
 # set emacs keybindings
 # bindkey -e
