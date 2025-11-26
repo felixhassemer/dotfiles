@@ -158,6 +158,9 @@ export GLFW_IM_MODULE='ibus'
 export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
 # man 2 select
 
+# QT Env Variables
+export QT_QPA_PLATFORM=xcb
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # Set qt application styling env variables
 # export QT_QPA_PLATFORMTHEME='qt5ct'
 
@@ -189,6 +192,7 @@ alias reload=". ~/.config/zsh/.zshrc"
 alias wttr="curl wttr.in/hamburg"
 alias defaultapps="nvim ~/.local/share/applications/mimeapps.list"
 alias applications="nnn -e -d /usr/share/applications/"
+alias resolve="/opt/resolve/bin/resolve"
 
 # Git Aliases 
 alias gd="git diff"
