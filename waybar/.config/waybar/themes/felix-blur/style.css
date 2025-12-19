@@ -1,33 +1,30 @@
-/*
- * __        __          _                  ____  _         _       
- * \ \      / /_ _ _   _| |__   __ _ _ __  / ___|| |_ _   _| | ___  
- *  \ \ /\ / / _` | | | | '_ \ / _` | '__| \___ \| __| | | | |/ _ \ 
- *   \ V  V / (_| | |_| | |_) | (_| | |     ___) | |_| |_| | |  __/ 
- *    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    |____/ \__|\__, |_|\___| 
- *                 |___/                              |___/         
- *  
- * by Stephan Raabe (2023) 
- * ----------------------------------------------------- 
-*/
-
 /* -----------------------------------------------------
- * Import Pywal colors 
+ * Theme Colors
  * ----------------------------------------------------- */
-/* @import 'style-light.css'; */
+@define-color backgroundlight #11111b;
+@define-color backgrounddark #11111b;
+@define-color workspacesbackground1 #11111b;
+@define-color workspacesbackground2 #24273a;
+@define-color bordercolor #11111b;
+@define-color textcolor1 #cad3f5;
+@define-color textcolor2 #cad3f5;
+@define-color textcolor3 #1e2030;
+@define-color iconcolor #11111b;
 
 /* -----------------------------------------------------
  * General 
  * ----------------------------------------------------- */
 
 * {
-  font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial,
-    sans-serif;
+  font-family:
+    "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   border: none;
   border-radius: 0px;
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: rgba(255, 255, 255, 0.1);
   /* border-bottom: 0px solid #ffffff; */
   border-bottom: none;
   /* color: #FFFFFF; */
