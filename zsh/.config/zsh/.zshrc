@@ -163,6 +163,9 @@ export QT_QPA_PLATFORM=xcb
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # Set qt application styling env variables
 # export QT_QPA_PLATFORMTHEME='qt5ct'
+# You need to set either:
+QT_QPA_PLATFORMTHEME=gtk3 # OR
+QT_QPA_PLATFORMTHEME=qt6ct
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
