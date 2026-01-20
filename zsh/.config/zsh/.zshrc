@@ -164,8 +164,8 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=1
 # Set qt application styling env variables
 # export QT_QPA_PLATFORMTHEME='qt5ct'
 # You need to set either:
-QT_QPA_PLATFORMTHEME=gtk3 # OR
-QT_QPA_PLATFORMTHEME=qt6ct
+# QT_QPA_PLATFORMTHEME=gtk3 # OR
+export QT_QPA_PLATFORMTHEME='qt6ct'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -186,6 +186,7 @@ alias nv="nvim"
 alias tmux="tmux -2"
 alias ack="ack -i -C 3"
 alias f="fzf"
+alias xo="cd ~/Dropbox/xobrain/ && nv ."
 alias calc="qalc -i"
 alias zshconfig="nvim ~/.config/zsh/.zshrc"
 alias reload=". ~/.config/zsh/.zshrc"
